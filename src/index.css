@@ -51,6 +51,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-image: url(./images/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: 100% 107px;
   padding: 25px;
 }
 
@@ -72,6 +75,11 @@ body {
 
 .main-content li {
   padding-block: 10px;
+}
+
+.main-content li::marker {
+  font-size: 1.4em;
+  color: #61dafb;
 }
 
 @media (max-width: 550px) {
