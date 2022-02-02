@@ -8,11 +8,13 @@
 
 body {
   margin: 0;
+  background: #282D35;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
 
-.nav {
+/* Navbar styles */
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,14 +32,50 @@ body {
   margin: 30px 7px 30px 25px;
 }
 
-.nav h3 {
+.nav-container h3 {
   margin-right: auto;
   color: #61dafb;
   font-size: 1.4em;
+  letter-spacing: -0.05em;
 }
 
-.nav > p {
+.nav-text {
   color: #deebf8;
   font-weight: 600;
   margin: 26px;
+}
+
+/* Main content styles */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+}
+
+.main-content {
+  width: 420px;
+  color: white;
+}
+
+.main-content h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main-content ul {
+  margin-top: 46px;
+}
+
+.main-content li {
+  padding-block: 10px;
+}
+
+@media (max-width: 550px) {
+  .main-content {
+    width: 100%;
+  }
 }
