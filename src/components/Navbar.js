@@ -1,9 +1,9 @@
-import React from "react";
-import reactLogo from "../images/react-icon-small.png";
+import React from 'react';
+import reactLogo from '../images/react-icon-small.png';
 
 export default function Navbar(props) {
   return (
-    <nav className={props.darkMode ? "dark": ""}>
+    <nav className={props.darkMode ? 'dark' : ''}>
       <img 
         className="nav--logo_icon"
         src={reactLogo}
